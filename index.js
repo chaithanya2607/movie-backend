@@ -15,13 +15,11 @@ dotenv.config()
 
 const app=express();
 app.use(cors())
-const PORT=process.env.PORT;
-
+const PORT=process.env.PORT
 const MONGO_URL=process.env.MONGO_URL
 
 
 
-// const MONGO_URL=""
 
 async function createConnection(){
   const client=new MongoClient(MONGO_URL)
